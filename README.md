@@ -11,7 +11,7 @@ Identifying cache poisoning vulnerabilities
 Detecting HTTP protocol downgrade issues
 Security research and penetration testing
 
-🔧 Features
+# 🔧 Features
 
 Dual Request Types: Tests both baseline requests and modified requests with X-Forwarded-Proto header
 Cache Busting: Automatically generates random cache-busting parameters
@@ -19,7 +19,7 @@ Concurrent Testing: Multi-threaded execution with configurable worker pool (defa
 Proxy Support: Built-in HTTP proxy integration for traffic inspection
 Raw HTTP Requests: Uses low-level raw HTTP request construction for precise control
 
-📦 Requirements
+# 📦 Requirements
 
 Dependencies
 
@@ -30,14 +30,14 @@ pip install urllib3
 Python Version
 
 Python 3.6+
-🚀 Installation
+# 🚀 Installation
 
 Clone or download the script
 Install dependencies:
 pip install -r requirements.txt
 
 Create an input file with target hosts
-💻 Usage
+# 💻 Usage
 
 Basic Command
 
@@ -56,7 +56,7 @@ example.com
 test.example.org
 app.company.com
 
-🔍 How It Works
+# 🔍 How It Works
 
 Request Types
 
@@ -78,7 +78,7 @@ For each host:
   3. Send modified request with X-Forwarded-Proto header
   4. Log status codes and responses
 
-⚙️ Configuration
+# ⚙️ Configuration
 
 Proxy Settings
 
@@ -99,7 +99,7 @@ Adjust concurrent requests by modifying:
 
 MAX_THREADS = 200  # Reduce for slower networks or to avoid rate limiting
 
-📊 Output
+# 📊 Output
 
 The tool outputs real-time results to console:
 
@@ -109,7 +109,7 @@ test.example.org/testcheck.js?cache_buster=testcheck 404
 
 Format: {host}/{path} {status_code}
 
-🛡️ Security Considerations
+# 🛡️ Security Considerations
 
 What This Tests
 
@@ -123,7 +123,7 @@ Cache poisoning via unkeyed headers
 HTTP/HTTPS mismatch handling
 Inconsistent redirect behavior
 Missing security headers on cached content
-🐛 Troubleshooting
+# 🐛 Troubleshooting
 
 Connection Timeouts
 
@@ -140,7 +140,7 @@ Invalid hostnames in input file
 Network connectivity issues
 Rate limiting by target servers
 Proxy configuration errors
-📝 Example Session
+# 📝 Example Session
 
 $ python cache_buster.py -i targets.txt -o results.txt
 example.com/testcheck.js?cache_buster=testcheck 200
