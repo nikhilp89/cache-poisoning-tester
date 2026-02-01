@@ -1,8 +1,8 @@
-HTTP Cache Poisoning Tester
+#HTTP Cache Poisoning Tester
 
 A Python-based security testing tool designed to probe web servers by inserting the X-Forwarded-Proto header to test for cache poisoning attacks
 
-📋 Overview
+#📋 Overview
 
 This tool sends specially crafted HTTP requests to test how web servers handle cache-busting parameters and HTTP/HTTPS protocol transitions. It's particularly useful for:
 
