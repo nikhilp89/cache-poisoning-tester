@@ -143,8 +143,13 @@ Proxy configuration errors
 # 📝 Example Session
 
 $ python cache_buster.py -i targets.txt -o results.txt
+
 example.com/testcheck.js?cache_buster=testcheck 200
+
 example.com/k7m2p.js?cache_buster=k7m2p 200
+
 api.example.com/testcheck.js?cache_buster=testcheck 404
+
 api.example.com/x9q4n.js?cache_buster=x9q4n 404
+
 Execution time: 3.45 seconds
